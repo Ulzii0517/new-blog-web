@@ -1,16 +1,15 @@
 import { Carousel } from "../carousel/Carousel";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
-import { Trending } from "../trending/TredingCard";
+import { Trending } from "../trending/TrendingCard";
 
 export const Homepage = () => {
   return (
     <div>
       <Header />
       <Carousel />
-      <Trending/>
+      <Trending />
       <Footer />
-      
     </div>
   );
 };
