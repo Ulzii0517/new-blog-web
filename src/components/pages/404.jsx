@@ -1,6 +1,3 @@
-export default function ErrorPage  ()  {
-    return (
-        <div>Error page not found
-        </div>
-    )
-}
+export const ErrorPage = () => {
+  return <div>Error page not found</div>;
+};

@@ -14,10 +14,14 @@ export const Trending = () => {
   }, []);
 
   return (
-    <div>
-      <p>Trending</p>
-      <div>
-        <TrendingCard article={articles} />;
+    <div className="w-full flex justify-center">
+      <div className="max-w-[1216px] w-full">
+        <p>Trending</p>
+        <div className="w-ful grid grid-cols-4 justify-center items-center">
+          {articles.map((article) => {
+            return <TrendingCard article={article} />;
+          })}
+        </div>
       </div>
     </div>
   );
