@@ -16,20 +16,20 @@ const BlogPost = () => {
 
   return (
     <div className="flex flex-col justify-center items-center w-full">
-      <div className="flex flex-col justify-start w-full gap-8 pb-10">
-        <p className="text-[24px] font-bold font-sans">All Blog Post</p>
-        <div className="flex justify-between">
-        <div className="flex gap-5">
-          <button>All</button>
-          <button>Design</button>
-          <button>Travel</button>
-          <button>Fashion</button>
-          <button>Technology</button>
-          <button>Branding</button>
-        </div>
-        <div className="flex ">
-          View all
-        </div>
+      <div className="flex flex-col items-center w-full gap-8 pb-10">
+        <div className="flex flex-col max-w-[1216px] w-full justify-center bg-red-500 ">
+          <p className="text-[24px] font-bold font-sans">All Blog Post</p>
+          <div className="flex justify-between">
+            <div className="flex gap-5">
+              <button>All</button>
+              <button>Design</button>
+              <button>Travel</button>
+              <button>Fashion</button>
+              <button>Technology</button>
+              <button>Branding</button>
+            </div>
+            <div className="flex ">View all</div>
+          </div>
         </div>
       </div>
       <div className="container flex flex-wrap justify-between gap-5 max-w-[1280px]">
