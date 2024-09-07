@@ -1,6 +1,5 @@
-import { ContactUs } from "@/components/pages/ContactUs";
-
+import { BlogListing } from "@/components/pages/BlogListing";
 
 export default function Home() {
-  return <ContactUs />;
+  return <BlogListing />;
 }
