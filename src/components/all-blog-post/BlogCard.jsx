@@ -31,6 +31,11 @@ const BlogCard = ({ article }) => {
   };
 
   return (
+    <div className="flex flex-col gap-2">
+      <div className="flex flex-col">
+        <p className="text-[24px] font-bold">All Blog Post</p>
+      </div>
+      
     <div className="w-[400px] h-[475px] border-[#E8E8EA] rounded-xl border p-4 flex flex-col justify-between">
       <div className="flex flex-col gap-4">
         <div
@@ -57,6 +62,7 @@ const BlogCard = ({ article }) => {
         {publishedDate.getFullYear()}-{generatMonth(publishedDate.getMonth())}-
         {publishedDate.getDay()}
       </p>
+    </div>
     </div>
   );
 };

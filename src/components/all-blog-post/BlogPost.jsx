@@ -16,7 +16,7 @@ const BlogPost = () => {
 
   return (
     <div className="flex flex-col items-center w-full">
-      <div className="container flex flex-wrap justify-between gap-5 max-w-[1280px]">
+      <div className="container flex flex-wrap justify-between gap-4 max-w-[1216px] ">
         {articles.map((article) => {
           return <BlogCard article={article} />;
         })}
