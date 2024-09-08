@@ -15,13 +15,9 @@ const BlogPost = () => {
   }, []);
 
   return (
-<<<<<<< HEAD
-    <div className="flex flex-col items-center w-full">
-      <div className="container flex flex-wrap justify-between gap-4 max-w-[1216px] ">
-=======
     <div className="flex flex-col justify-center items-center w-full">
       <div className="flex flex-col items-center w-full gap-8 pb-10">
-        <div className="flex flex-col max-w-[1216px] w-full justify-center bg-red-500 ">
+        <div className="flex flex-col max-w-[1216px] w-full justify-center  ">
           <p className="text-[24px] font-bold font-sans">All Blog Post</p>
           <div className="flex justify-between">
             <div className="flex gap-5">
@@ -37,7 +33,6 @@ const BlogPost = () => {
         </div>
       </div>
       <div className="container flex flex-wrap justify-between gap-5 max-w-[1280px]">
->>>>>>> af2e9f8bf33f8423a1f835393c31bc4fae108f34
         {articles.map((article) => {
           return <BlogCard article={article} />;
         })}
