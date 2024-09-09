@@ -6,7 +6,7 @@ import { TwitterIcon } from "./TwitterIcon";
 
 export const Footer = () => {
   return (
-    <footer className="flex justify-center pt-[64px] px-[16px] bg-gray-100">
+    <footer className="flex justify-center pt-[64px] px-[16px] bg-gray-100 ">
       <div className="container max-w-[1216px] w-full flex flex-col gap-[25px] mx-auto">
         <div className="flex flex-col md:flex-row justify-between gap-[25px]">
           <div className="flex flex-col items-start gap-3 max-w-[289px]">
