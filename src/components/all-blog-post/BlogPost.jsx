@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import BlogCard from "./BlogCard";
+import Link from "next/link";
 
 const BlogPost = () => {
   const [articles, setArticles] = useState([]);
@@ -34,7 +35,11 @@ const BlogPost = () => {
       </div>
       <div className="container flex flex-wrap justify-between gap-5 max-w-[1280px]">
         {articles.map((article) => {
-          return <BlogCard article={article} />;
+          return (
+            <Link href={`blog-list/${article.id}`}>
+              <BlogCard article={article} />
+            </Link>
+          )
         })}
       </div>
     </div>

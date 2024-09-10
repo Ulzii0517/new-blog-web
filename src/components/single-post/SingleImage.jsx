@@ -45,7 +45,7 @@ const SingleImage = ({ article }) => {
 
         <div
           style={{
-            backgroundImage: `url(${article.cover_image})`,
+            backgroundImage: `url(${article?.cover_image})`,
             width: "100%",
             height: "462px",
             backgroundSize: "cover",
@@ -71,4 +71,4 @@ const SingleImage = ({ article }) => {
   );
 };
 
-export default SingleImage;
+export default SingleImage; 
