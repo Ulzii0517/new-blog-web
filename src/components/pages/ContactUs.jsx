@@ -5,9 +5,7 @@ import { Header } from "../header/Header";
 export const ContactUs = () => {
   return (
     <div>
-      <Header />
-      <Contact/>
-      <Footer />
+      <Contact />
     </div>
   );
 };

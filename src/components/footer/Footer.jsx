@@ -1,4 +1,4 @@
-import { MetaBlogIcon } from "../header/MetaBlogIcon";
+import { MetaBlogIcon } from "../layout/header/MetaBlogIcon";
 import { FbIcon } from "./FbIcon";
 import { InstaIcon } from "./InstaIcon";
 import { LinkIcon } from "./LinkIcon";

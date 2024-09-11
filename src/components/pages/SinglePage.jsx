@@ -18,9 +18,7 @@ export const SinglePage = () => {
 
   return (
     <div>
-      <Header />
       <SinglePost article={article} />
-      <Footer />
     </div>
   );
 };
