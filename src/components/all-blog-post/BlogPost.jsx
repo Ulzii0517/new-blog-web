@@ -18,7 +18,7 @@ const BlogPost = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full">
       <div className="flex flex-col items-center w-full gap-8 pb-10">
-        <div className="flex flex-col max-w-[1216px] w-full justify-center  ">
+        <div className="flex flex-col max-w-[1216px] w-full justify-center gap-[32px] ">
           <p className="text-[24px] font-bold font-sans">All Blog Post</p>
           <div className="flex justify-between">
             <div className="flex gap-5">
@@ -33,7 +33,7 @@ const BlogPost = () => {
           </div>
         </div>
       </div>
-      <div className="container flex flex-wrap justify-between gap-5 max-w-[1280px]">
+      <div className="container flex flex-wrap justify-between gap-5 max-w-[1280px] px-[20px]">
         {articles.map((article) => {
           return (
             <Link href={`blog-list/${article.id}`}>

@@ -19,7 +19,7 @@ export const SinglePage = () => {
   return (
     <div>
       <Header />
-      <SinglePost />
+      <SinglePost article={article} />
       <Footer />
     </div>
   );
