@@ -27,7 +27,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="flex flex-col justify-center items-center w-full h-auto py-[32px] relative ">
+    <header className="flex flex-col justify-center items-center w-full h-auto py-[32px]  ">
       <div className="container max-w-[1216px] flex justify-between">
         <div>
           <Link href="/home">
@@ -46,14 +46,16 @@ export const Header = () => {
             <button>Contact</button>
           </Link>
         </div>
-        <div className=" flex flex-col justify-center border items-center rounded-[12px] py-[8px] pl-[16px] pr-[8px] bg-[#F4F4F5]">
-          <input
-            onChange={handleInputChange}
-            type="text"
-            placeholder="Search"
-            className="bg-[#F4F4F5]"
-          />
-          <SearchIcon />
+        <div className=" flex flex-col justify-center  items-center relative ">
+          <div className=" flex justify-center items-center border rounded-[12px] py-[8px] pl-[16px] pr-[8px] bg-[#F4F4F5]">
+            <input
+              onChange={handleInputChange}
+              type="text"
+              placeholder="Search"
+              className="bg-[#F4F4F5]"
+            />
+            <SearchIcon />
+          </div>
 
           <SearchDropDown
             searchValue={searchValue}
@@ -64,5 +66,3 @@ export const Header = () => {
     </header>
   );
 };
-
-

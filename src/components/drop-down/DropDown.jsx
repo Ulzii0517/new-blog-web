@@ -4,13 +4,15 @@ export const SearchDropDown = ({ filteredArticles, searchValue }) => {
   return (
     <div
       className={`${
-        searchValue ? "h-[200px]" : "h-0"
-      } flex flex-col gap-2 transition-all duration-200 overflow-hidden absolute bg-white rounded-md `}
+        searchValue ? "h-[200px] border" : "h-0"
+      } flex flex-col gap-2 transition-all duration-200 w-full overflow-hidden rounded-md absolute top-[40px] bg-gray-100`}
     >
       {filteredArticles?.map((article) => {
         return (
-          <Link href={`blogs/${article?.id}`}>
-            <div>{article?.title}</div>
+          <Link href={`blog-list/${article?.id}`}>
+            <div className="h-full p-2 border-b-2 text-nowrap hover:bg-gray-300">
+              {article?.title}
+            </div>
           </Link>
         );
       })}

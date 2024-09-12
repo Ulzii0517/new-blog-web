@@ -1,4 +1,5 @@
-import { MetaBlogIcon } from "../layout/header/MetaBlogIcon";
+
+import { MetaBlogIcon } from "../header/MetaBlogIcon";
 import { FbIcon } from "./FbIcon";
 import { InstaIcon } from "./InstaIcon";
 import { LinkIcon } from "./LinkIcon";
@@ -36,7 +37,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="flex justify-between items-center py-[10px]">
-          <MetaBlogIcon />
+        <MetaBlogIcon />
           <div className="flex gap-4 text-[16px] font-normal font-sans text-[#3B3C4A]">
             <p>Terms of Use</p>
             <p>Privacy Policy</p>
