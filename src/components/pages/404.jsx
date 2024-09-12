@@ -5,9 +5,9 @@ import { Footer } from "../footer/Footer";
 export const ErrorPage = () => {
   return (
     <div>
-      <Header />
+      
       <ErrorFound />
-      <Footer />
+      
     </div>
   );
 };

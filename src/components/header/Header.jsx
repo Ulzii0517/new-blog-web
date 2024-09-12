@@ -35,14 +35,14 @@ export const Header = () => {
           </Link>
         </div>
 
-        <div className="flex w-full h-auto justify-center gap-10 pt-1 text-[16px] font-normal">
-          <Link href="/home">
+        <div className="flex w-full h-auto justify-center gap-10 pt-1 text-[16px] font-normal ">
+          <Link className="hover:text-blue-600 transition ease-in delay-100" href="/home">
             <button>Home</button>
           </Link>
-          <Link href="/blog-list">
+          <Link className="hover:text-blue-600 transition ease-in delay-100" href="/blog-list">
             <button>Blog</button>
           </Link>
-          <Link href="/contact-us">
+          <Link className="hover:text-blue-600 transition ease-in delay-100" href="/contact-us">
             <button>Contact</button>
           </Link>
         </div>

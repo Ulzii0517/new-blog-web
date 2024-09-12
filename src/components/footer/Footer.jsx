@@ -1,9 +1,9 @@
-
 import { MetaBlogIcon } from "../header/MetaBlogIcon";
 import { FbIcon } from "./FbIcon";
 import { InstaIcon } from "./InstaIcon";
 import { LinkIcon } from "./LinkIcon";
 import { TwitterIcon } from "./TwitterIcon";
+import Link from "next/link";
 
 export const Footer = () => {
   return (
@@ -24,20 +24,37 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col  items-start shrink-0 gap-[20px] max-w-[521px]">
             <div className="flex flex-col items-start gap-2 text-[16px] font-normal font-sans text-[#3B3C4A]">
-              <p>Home</p>
-              <p>Blog</p>
-              <p>Contact</p>
+            <Link className="hover:text-blue-600 transition ease-in delay-100" href="/home">
+            <button>Home</button>
+          </Link>
+          <Link className="hover:text-blue-600 transition ease-in delay-100" href="/blog-list">
+            <button>Blog</button>
+          </Link>
+          <Link className="hover:text-blue-600 transition ease-in delay-100" href="/contact-us">
+            <button>Contact</button>
+          </Link>
             </div>
           </div>
           <div className="flex gap-[25px] ">
-            <FbIcon />
-            <TwitterIcon />
-            <InstaIcon />
-            <LinkIcon />
+            <a href="https://www.facebook.com/">
+              <FbIcon />
+            </a>
+
+            <a href="https://x.com/?lang=en">
+              <TwitterIcon />
+            </a>
+            <a href="https://www.instagram.com/">
+              {" "}
+              <InstaIcon />{" "}
+            </a>
+            <a href="https://mn.linkedin.com/">
+              {" "}
+              <LinkIcon />{" "}
+            </a>
           </div>
         </div>
         <div className="flex justify-between items-center py-[10px]">
-        <MetaBlogIcon />
+          <MetaBlogIcon />
           <div className="flex gap-4 text-[16px] font-normal font-sans text-[#3B3C4A]">
             <p>Terms of Use</p>
             <p>Privacy Policy</p>
