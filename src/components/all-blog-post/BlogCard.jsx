@@ -31,35 +31,46 @@ const BlogCard = ({ article }) => {
   };
 
   return (
-    
-      <div className="w-[400px] h-[475px] border-[#E8E8EA] rounded-xl border p-4 flex flex-col justify-between">
-        <div className="flex flex-col gap-4">
-        
-          <div
-            style={{
-              backgroundImage: `url(${article.cover_image})`,
-              width: "100%",
-              height: "240px",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              borderRadius: "6px",
-            }}
-          ></div>
-          <div className="w-[100px] h-[30px] bg-[#4B6BFB0D] flex justify-center items-center rounded-md text-[#4B6BFB]">
-            {article.tag_list[0]}
-          </div>
-          <div className="overflow-hidden h-[100px]">
-            <p className="text-2xl font-semibold text-ellipsis ">
-              {article.description}
-            </p>
-          </div>
+    <div className="w-[400px] h-[475px] border-[#E8E8EA] rounded-xl border p-4 flex flex-col justify-between">
+      <div className="flex flex-col gap-4">
+        <div
+          style={{
+            backgroundImage: `url(${article.cover_image})`,
+            width: "100%",
+            height: "240px",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            borderRadius: "6px",
+          }}
+        ></div>
+        <div className="w-[100px] h-[30px] bg-[#4B6BFB0D] flex justify-center items-center rounded-md text-[#4B6BFB]">
+          {article.tag_list[0]}
         </div>
+        <div className="overflow-hidden h-[100px]">
+          <p className="text-2xl font-semibold text-ellipsis ">
+            {article.description}
+          </p>
+        </div>
+      </div>
 
+      <div className="flex justtify-center items-center gap-4">
+        <div
+          style={{
+            backgroundImage: `url(${article?.user.profile_image})`,
+            width: "30px",
+            height: "30px",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            borderRadius: "50%",
+          }}
+        ></div>
+        <div>{article?.user.name}</div>
         <p className=" text-[#97989F]">
-          {publishedDate.getFullYear()}-{generatMonth(publishedDate.getMonth())}-
-          {publishedDate.getDay()}
+          {publishedDate.getFullYear()}-{generatMonth(publishedDate.getMonth())}
+          -{publishedDate.getDay()}
         </p>
       </div>
+    </div>
   );
 };
 

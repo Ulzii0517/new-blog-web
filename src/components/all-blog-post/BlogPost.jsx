@@ -39,7 +39,7 @@ const BlogPost = () => {
             <Link href={`blog-list/${article.id}`}>
               <BlogCard article={article} />
             </Link>
-          )
+          );
         })}
       </div>
     </div>
